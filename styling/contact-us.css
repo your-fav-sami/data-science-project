@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+.garder {
+  border: 1px dashed red;
+}
+.navbar {
+  /* background-image: url("../assets/images/article-nav-bg.png"); */
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar ul li {
+  margin-left: 12px;
+}
+.bg-parent {
+  /* height: 100vh; */
+  background-image: url("../assets/images/contact-header-bg-1400x995.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+/* contact details wrapper  */
+
+.contact-wrapper{
+    width: 85%;
+}
+.heading{
+    font-size: 30px;
+    color: #00B3FE;
+}
+.title{
+    font-size: 30px;
+    color: white;
+}
+.disc{
+    font-size: 20px;
+    color: white;
+}
+.info{
+    font-size: 30px;
+    color: #00B3FE;
+}
+.form-info{
+    font-size: 20px;
+    color: white;
+}
+.links-wrapper p{
+    font-size: 20px;
+    color: white;
+}
+.links-wrapper i{
+    /* font-size: 20px; */
+    color: #00B3FE;
+    margin-right: 20px;
+}
+/* Form */
+.contact-form{
+  color: white;
+  font-size: 20px;
+  border-left: 1px solid white;
+  padding: 50px 100px;
+}
+.contact-form input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 100%;
+  color: white;
+  outline: none;
+}
+.form-text p{
+  color: white;
+  font-size: 20px;
+}
+.form-text textarea{
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  padding: 10px 0px 50px 10px;
+  resize: none;
+}
+.send-button button{
+  color: white;
+  background-color: #00B3FE;
+
+}
+.send-button button:hover{
+  background-color: transparent;
+  color: #00B3FE;
+  border: 1px solid #00B3FE;
+}
+/* Media Queries */
+@media screen and (max-width: 1100px){
+  .heading{
+    font-size: 26px;
+}
+.title{
+    font-size: 26px;
+}
+.disc{
+    font-size: 18px;
+}
+.info{
+    font-size: 26px;
+}
+.form-info{
+    font-size: 18px;
+}
+.links-wrapper p{
+    font-size: 18px;
+}
+.links-wrapper i{
+    /* font-size: 20px; */
+}
+
+  .contact-form{
+    color: white;
+    font-size: 20px;
+    border-left: 1px solid white;
+    padding: 50px 50px;
+  }
+}
+@media screen and (max-width: 992px){}
+@media screen and (max-width: 768px){
+    
+    .contact-wrapper{
+        width: 100%;
+    }
+    .contact-details{
+        padding: 0px 10%;
+    }
+    .contact-form{
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border-left: 1px solid white;
+      padding: 50px 10%;
+
+    }
+    .contact-form input{
+      border-bottom: 1px solid black;
+      color: black;
+    }
+    .form-text p{
+      color: black;
+      font-size: 18px;
+    }
+    .form-text textarea{
+      border: 1px solid black;
+      color: black;
+    }
+}
+@media screen and (max-width: 500px){
+  .heading{
+    font-size: 24px;
+}
+.title{
+    font-size: 24px;
+}
+.disc{
+    font-size: 16px;
+}
+.info{
+    font-size: 24px;
+}
+.form-info{
+    font-size: 16px;
+}
+.links-wrapper p{
+    font-size: 16px;
+}
+.links-wrapper i{
+    /* font-size: 20px; */
+}
+  .contact-form{
+    font-size: 16px;
+  }
+  .contact-form input{
+    color: black;
+    font-size: 16px;
+
+  }
+  .form-text p{
+    font-size: 16px;
+  }
+  .form-text textarea{
+    border: 1px solid black;
+    color: black;
+    
+  }
+}

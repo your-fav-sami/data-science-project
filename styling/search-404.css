@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+.garder {
+  border: 1px dashed purple;
+}
+.navbar {
+  /* background-image: url("../assets/images/article-nav-bg.png"); */
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar ul li {
+  margin-left: 12px;
+}
+.bg-parent {
+  background-image: url("../assets/images/blogs-header-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+.content{
+    width: 85%;
+}
+/* Globe Img */
+.globe-img{
+    width: 50%;
+}
+.heading{
+    color: #344154;
+    font-size: 150px;
+    font-weight: 600;
+}
+.title{
+    color: #212121;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.disc{
+    color: #ABB1BF;
+    font-size: 16px;
+}
+
+.go-home-button button{
+    background-color: #00B3FE;
+    color: white;
+    font-weight: 500;
+}
+.go-home-button i{
+    font-size: 24px;
+    color: white;
+    top: 50%;
+    right: 10%;
+    transform: translate(0%,-50%);
+}
+.fish-img{
+
+    top: -100px;
+    left: -100px;
+}
+.error-wrapper{
+    margin-top: 20%;
+}
+@media screen and (max-width: 756px) {
+    .globe-img{
+        display: none;
+    }
+    .error-wrapper{
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 620px) {
+  .fish-img{
+    width: 200px;
+  }
+  .heading{
+    font-size: 120px;
+    font-weight: 600;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.disc{
+    font-size: 14px;
+}
+
+}
+@media screen and (max-width: 510px) {
+  .error-wrapper{
+    text-align: center;
+  }
+  .fish-img{
+    width: 180px;
+    top: -100px;
+    left: -20px;
+  }
+  .heading{
+    font-size: 100px;
+    font-weight: 600;
+}
+.title{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.disc{
+    font-size: 14px;
+}
+
+}
