@@ -8,7 +8,7 @@
   list-style: none;
 }
 .garder {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .navbar {
   background-position: center;
@@ -17,7 +17,6 @@
 
 .navbar a {
   color: white;
-
 }
 
 .navbar ul li {
@@ -186,25 +185,25 @@ article {
   );
 }
 /* 1st Column */
-  /* Card */
-  .card-wrapper-1stcol{
-    padding: 15px 5% 15px 15px ;
-    border-radius: 15px;
-    box-shadow: 3px 3px 12px 0px rgb(231, 231, 231);
-    background-color: #002046;
-  }
-  .card-wrapper-1stcol img{
-    width: 250px;
-  }
-  .heading-1stcol{
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  .disc-1stcol{
-    color: white;
-    font-size: 16px;
-  }
+/* Card */
+.card-wrapper-1stcol {
+  padding: 15px 5% 15px 15px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 12px 0px rgb(231, 231, 231);
+  background-color: #002046;
+}
+.card-wrapper-1stcol img {
+  width: 250px;
+}
+.heading-1stcol {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.disc-1stcol {
+  color: white;
+  font-size: 16px;
+}
 /* Second Column */
 .top-button-container-2 p {
   color: #002046;
@@ -229,7 +228,6 @@ article {
 }
 .feature-card img {
   width: 50px;
-  
 }
 .feature-heading {
   color: #333333;
@@ -244,16 +242,21 @@ article {
 /* Main Content Cards */
 .card-container {
   margin: 10px 0px;
-  width: 30%;
+  width: 31%;
   background-color: #c4c4c41a;
-  box-shadow: 3px 3px 12px 0 rgb(219, 219, 219);
+  box-shadow: 0px 0px 5px 0px rgb(194, 194, 194);
+
+  border-bottom: #002046 4px solid;
+}
+.image-popper {
+  background-color: #002046;
+  color: white;
+  padding: 4px 20px;
+  font-size: 12px;
+  bottom: 0px;
 }
 .card-container img {
   border-radius: 0;
-}
-.main-card-title {
-  color: #666666;
-  font-size: 12px;
 }
 .main-card-heading {
   color: #191919;
@@ -268,16 +271,63 @@ article {
   color: #666666;
   font-size: 12px;
 }
-.read-more-button{
-
+.read-more-button {
   background-color: transparent;
-color: #002046;
-border: 1px solid #002046;
-padding: 7px 15px;
-border-radius: 6px;
+  color: #002046;
+  border: 1px solid #002046;
+  padding: 7px 15px;
+  border-radius: 6px;
 }
 .card-icons {
   color: #666666;
+}
+/* Automation Section */
+.automation-card-wrapper-big {
+  width: 65%;
+  /* border: 1px solid grey; */
+  box-shadow: 0px 0px 5px 0px rgb(194, 194, 194);
+  border-radius: 8px;
+}
+.automation-card-wrapper {
+  width: 32.5%;
+  /* border: 1px solid rgb(224, 224, 224); */
+  box-shadow: 0px 0px 5px 0px rgb(194, 194, 194);
+  border-radius: 8px;
+}
+.automation-poper {
+  top: 15px;
+  left: 15px;
+}
+.automation-poper p {
+  background-color: #002046;
+  color: white;
+  padding: 4px 20px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.user-name {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+}
+.user-time {
+  color: #666666;
+  font-size: 14px;
+}
+.automation-heading {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+}
+.automation-disc {
+  color: #666666;
+  font-size: 14px;
+  line-height: 21px;
+}
+.automation-button a {
+  text-decoration: none;
+  color: #1EBBFC;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1300px) {
@@ -291,6 +341,13 @@ border-radius: 6px;
   .top-button-container-2 button {
     font-size: 14px;
     padding: 10px 16px;
+  }
+  .user-name {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .user-time {
+    font-size: 12px;
   }
 }
 
@@ -351,9 +408,30 @@ border-radius: 6px;
     font-size: 16px;
     padding: 10px 25px;
   }
+  /* Article Cards */
+
+  .card-container {
+    width: 48%;
+  }
+  /* Automation Cards */
+  .automation-card-wrapper-big {
+    display: none;
+  }
+  .automation-card-wrapper {
+    width: 48%;
+  }
+  .user-name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .user-time {
+    font-size: 14px;
+  }
 }
+
 @media screen and (max-width: 768px) {
   article {
+    width: 90%;
     margin: 20px 0px;
   }
   .search-input {
@@ -425,11 +503,37 @@ border-radius: 6px;
     font-size: 16px;
     padding: 7px 20px;
   }
-  .heading-1stcol{
+  .heading-1stcol {
     font-size: 18px;
   }
-  .disc-1stcol{
+  .disc-1stcol {
     font-size: 12px;
+  }
+  /* Article Main Cards */
+  .automation-poper p {
+    padding: 4px 20px;
+    font-size: 12px;
+  }
+  .user-name {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .user-time {
+    font-size: 12px;
+  }
+  .pfp img{
+    width: 30px;
+  }
+  .automation-heading {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .automation-disc {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .automation-button a {
+    font-size: 14px;
   }
 }
 
@@ -443,19 +547,19 @@ border-radius: 6px;
   .search-input i {
     font-size: 14px;
   }
-   .card-image-1stcol{
+  .card-image-1stcol {
     width: 100%;
     /* height: 200px; */
   }
-  .card-image-1stcol img{
+  .card-image-1stcol img {
     width: 100%;
     height: 100%;
   }
-  
-  .heading-1stcol{
+
+  .heading-1stcol {
     font-size: 20px;
   }
-  .disc-1stcol{
+  .disc-1stcol {
     font-size: 12px;
   }
 
@@ -468,6 +572,43 @@ border-radius: 6px;
   }
   .feature-disc {
     font-size: 10px;
+  }
+  /* Article Main Cards */
+  .main-card-heading {
+    font-size: 16px;
+  }
+  .main-card-disc {
+    font-size: 10px;
+  }
+  .image-popper {
+    font-size: 8px;
+    padding: 4px 15px;
+  }
+  /* Automation Main Cards */
+  .automation-poper p {
+    padding: 4px 20px;
+    font-size: 12px;
+  }
+  .user-name {
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .user-time {
+    font-size: 10px;
+  }
+  .pfp img{
+    width: 25px;
+  }
+  .automation-heading {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .automation-disc {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .automation-button a {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -524,12 +665,46 @@ border-radius: 6px;
     padding: 7px 20px;
   }
 
-
-  .heading-1stcol{
+  .heading-1stcol {
     font-size: 16px;
   }
-  .disc-1stcol{
+  .disc-1stcol {
     font-size: 10px;
+  }
+  /* Article Main Cards */
+  .card-container {
+    width: 80%;
+    margin: 15px auto;
+  }
+  /* Automation Cards */
+  .automation-card-wrapper {
+    width: 100%;
+    
+  }
+   .automation-poper p {
+    padding: 4px 20px;
+    font-size: 12px;
+  }
+  .user-name {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .user-time {
+    font-size: 12px;
+  }
+  .pfp img{
+    width: 30px;
+  }
+  .automation-heading {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .automation-disc {
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .automation-button a {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -589,7 +764,6 @@ border-radius: 6px;
     padding: 7px 18px;
   }
 
-
   .feature-card img {
     width: 35px;
   }
@@ -600,6 +774,101 @@ border-radius: 6px;
   .feature-disc {
     font-size: 8px;
   }
+  /* Article Main Cards */
+  .card-container {
+    width: 100%;
+    margin: 15px auto;
+  }
 }
 @media screen and (max-width: 390px) {
+}
+
+
+
+
+/* Footer  */
+.foot-wrapper {
+  background-color: #002046;
+  color: white;
+}
+.foot-head p {
+  font-size: 30px;
+  font-weight: 500;
+}
+.foot-disc p {
+  font-size: 14px;
+  font-weight: 200;
+}
+.foot-button .btn {
+  background-color: #1ebbfc;
+  font-size: 20px;
+}
+.foot-links a {
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+}
+.foot-social-links {
+  font-size: 38px;
+  color: white;
+}
+.foot-social-links i {
+  padding: 10px;
+  background-color: #1ebbfc;
+  border-radius: 7px;
+  margin-right: 30px;
+}
+@media screen and (max-width: 756px) {
+
+  .foot-social-links {
+    font-size: 34px;
+  }
+  .foot-social-links i {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .foot-head p {
+    font-size: 24px;
+  }
+  .foot-disc p {
+    font-size: 12px;
+  }
+  .foot-button .btn {
+    font-size: 16px;
+  }
+  .foot-social-links {
+    font-size: 30px;
+  }
+  .foot-social-links i {
+    margin-right: 20px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .foot-head p {
+    font-size: 20px;
+  }
+  .foot-disc p {
+    font-size: 10px;
+  }
+  .foot-button .btn {
+    font-size: 12px;
+  }
+  .foot-links a {
+    font-size: 8px;
+  }
+  .foot-social-links {
+    font-size: 20px;
+  }
+  .foot-social-links i {
+    margin-right: 15px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .foot-head p {
+    font-size: 16px;
+  }
 }
